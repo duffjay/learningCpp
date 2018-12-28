@@ -1,0 +1,79 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build hello Jay",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o",
+                "bin/hello",
+                "sams/Hello.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build operator 12.6",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o",
+                "bin/oper126",
+                "sams/oper126.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build operator 12.9",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o",
+                "bin/oper129",
+                "sams/oper129.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build operator 12.12",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o",
+                "bin/oper1212",
+                "sams/oper1212.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
